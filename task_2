@@ -1,0 +1,16 @@
+import math
+from mod import is_perfect_number
+
+m = float(input("Введіть значення m: "))
+n = float(input("Введіть значення n: "))
+
+z = (math.sqrt(m) - math.sqrt(n)) / m
+
+print(f"Результат: {z}")
+
+number = int(input("Введіть число: "))
+
+if is_perfect_number(number):
+    print(f"{number} є досконалим числом.")
+else:
+    print(f"{number} не є досконалим числом.")
